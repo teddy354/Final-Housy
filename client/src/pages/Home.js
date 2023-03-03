@@ -30,7 +30,7 @@ export default function Home(props) {
     const filteredHouses = houses.filter((house) => {
       return (
         (filter.price === "" || house.price < parseInt(filter.price)) &&
-        (filter.name === "" || house.name === filter.name.toLowerCase().includes(house.name)) &&
+        (filter.name === "" || house.name === filter.name) &&
         (filter.type_rent === "" || house.type_rent === filter.type_rent) &&
         (filter.bedroom === "" || house.bedroom === parseInt(filter.bedroom)) &&
         (filter.bathroom === "" || house.bathroom === parseInt(filter.bathroom)) &&
